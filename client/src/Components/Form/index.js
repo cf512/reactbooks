@@ -13,7 +13,7 @@ const Form = (props) => {
             <h4>Book Search</h4>
              <Label for="search">Book</Label><br/>
             <Input type="text" name="search" placeholder=""/><br/>
-            <Button><i class="material-icon"></i>Search</Button>
+            <Button><i className="material-icon"></i>Search</Button>
 
         </form>
     )

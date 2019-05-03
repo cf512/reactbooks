@@ -3,7 +3,7 @@ import React from "react"
 const Input = (props) => {
 
     return (
-            <input {...props} class="validate"/>
+            <input {...props} className="validate"/>
             )
     
 
