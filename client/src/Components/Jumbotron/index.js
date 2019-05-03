@@ -5,8 +5,8 @@ const Jumbotron = ({children}) =>{
 
     return <div className="jumbotron">
 
-            <h3>(React) Google Book Search</h3>
-            <h4>Search for and Save Books of Interest</h4>
+            <h3>Google Book Search (with React!)</h3>
+            <h4>search and save books</h4>
 
     </div>
 }
