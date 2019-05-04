@@ -70,13 +70,13 @@ class Search extends Component {
             <React.Fragment>
                 <div className="jumbotron jumbotron-fluid">
                     <div className="container-fluid">
-                        <h1>Search For and Save Your Favorite Books!</h1>
+                        <h1>Search For and Save Books!</h1>
                     </div>
                 </div>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 col-sm-6 col-md-3">
-                            <h3>Search For A Book</h3>
+                            <h3>Search For Books</h3>
                             <form onSubmit={this.handleFormSubmit}>
                                 <input
                                     name="searchTerm"
@@ -86,14 +86,14 @@ class Search extends Component {
                                     type="input"
                                     className="form-control mb-3"
                                 />
-                                <button className="btn btn-block btn-success" onClick={this.handleFormSubmit}>
+                                <button className="btn btn-block btn-primary" onClick={this.handleFormSubmit}>
                                     Search
                                 </button>
                             </form>
                         </div>
                         <div className="col-12 col-sm-6 col-md-9">
                             {!this.state.booksList.length ? (
-                            <h2 className="text-center">Search For a Book</h2>
+                            <h2 className="text-center">Search For Books</h2>
                             ) : (
                             <React.Fragment>
                                 <h3>Results: {this.state.searchTerm}</h3>
