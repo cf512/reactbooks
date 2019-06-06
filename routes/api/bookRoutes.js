@@ -3,7 +3,9 @@ const booksController = require("../../controller/bookController.js");
 
 router
     .route("/")
-    .get(booksController.findAll)
+    .get((req, res) => {
+        booksController.findAll(req, res);
+    })
     .post(booksController.saveBook);
 
 router 

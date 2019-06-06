@@ -2,6 +2,7 @@ const db = require("../models");
 
 module.exports = {
     findAll(req, res){
+        console.log("Am i getting hit")
         db.Books.find(req.query)
             .then(dbBooks => res.json(dbBooks))
             .catch((err) => {

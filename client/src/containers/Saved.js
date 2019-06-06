@@ -13,8 +13,10 @@ class Saved extends Component {
 
     getBooks = () => {
         API.getSavedBooks()
-            .then(res => this.setState({ booksList: res.data })
-            )
+            .then(res => {
+                console.log(res.data);
+                this.setState({ booksList: res.data });
+            })
             .catch(err => console.log(err));
     };
 
